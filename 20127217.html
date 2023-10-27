@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bé tập tính</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Bé tập tính</h2>
+        <div class="row">
+            <div class="col-2">
+                <p class="font-size-lg mt-2">Số thứ nhất</p>
+                <p class="font-size-lg mt-3">Số thứ hai</p>
+                <p class="font-size-lg mt-3">Kết quả</p>
+                <p class="font-size-lg mt-3">Thông báo</p>
+            </div>
+            <div class="col-4">
+                <input type="text" id="num1" class="form-control mt-1 font-size-lg" placeholder="Số thứ nhất">
+                <input type="text" id="num2" class="form-control mt-1" placeholder="Số thứ hai">
+                <input type="text" id="result" class="form-control mt-1" placeholder="Kết quả" readonly>
+                <div id="error-message" class="text-danger mt-1"></div>
+            </div>
+            <div class="col-2">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="operator" id="addRadio" value="+">
+                    <label class="form-check-label" for="addRadio">Cộng</label>
+                </div>
+                <div class="form-check mt-3">
+                    <input class="form-check-input" type="radio" name="operator" id="multiplyRadio" value="*">
+                    <label class="form-check-label" for="multiplyRadio">Nhân</label>
+                </div>
+                <button class="btn btn-primary mt-4" onclick="calculate()">Tính</button>
+            </div>
+            <div class="col-2">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="operator" id="subtractRadio" value="-">
+                    <label class="form-check-label" for="subtractRadio">Trừ</label>
+                </div>
+                
+                <div class="form-check mt-3">
+                    <input class="form-check-input" type="radio" name="operator" id="divideRadio" value="/">
+                    <label class="form-check-label" for="divideRadio">Chia</label>
+                </div>
+            </div>
+        </div>
+
+        </div>
+        <script src="main.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
